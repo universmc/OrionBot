@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e42; /* Un bleu violet foncé évoquant la nuit */
+    color: #ffffff; /* Texte en blanc pour un bon contraste */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #2c2c5c; /* Un violet plus clair pour les conteneurs */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffa7c4; /* Rose pâle pour le titre */
+}
+
+.image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ffffff; /* Une bordure blanche autour des images */
+    border-radius: 4px;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #f0e4ff; /* Un blanc légèrement violet pour la description */
+}
+
+.how-to {
+    background-color: #35357a; /* Une couleur plus foncée pour les sections explicatives */
+    padding: 20px;
+    border-left: 4px solid #ffa7c4; /* Rose pâle pour la bordure de la section */
+    border-radius: 4px;
+    color: #e0d9ff; /* Texte plus clair */
+}
+
+.how-to h2 {
+    margin-top: 0;
+    color: #ffccf9; /* Un rose clair pour les titres dans les sections "How-To" */
+}
+
+.how-to pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 14px;
+    background-color: #2c2c5c;
+    padding: 10px;
+    border-radius: 4px;
+    color: #dcdcff;
+}

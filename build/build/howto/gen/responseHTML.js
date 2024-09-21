@@ -18,17 +18,7 @@ async function generateHTML(subject, imageFileName, documentation) {
     <meta name="description" content="Guide et illustration pour ${subject}">
     <title>${title}</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <style>
-      body { font-family: Arial, sans-serif; background-color: #f7f7f7; }
-      .container { max-width: 800px; margin: 50px auto; padding: 20px; background-color: #fff; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); }
-      .title { font-size: 28px; font-weight: bold; text-align: center; margin-bottom: 20px; }
-      .image-container { text-align: center; margin-bottom: 20px; }
-      img { max-width: 100%; height: auto; }
-      .description { font-size: 16px; line-height: 1.6; margin-bottom: 20px; }
-      .how-to { background-color: #f9f9f9; padding: 20px; border-left: 4px solid #007BFF; }
-      .how-to h2 { margin-top: 0; }
-      .how-to pre { white-space: pre-wrap; word-wrap: break-word; font-size: 14px; }
-    </style>
+        <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
   <div class="container">
