@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # Affichage de l'heure et du mode de développement
 echo "💻$(date "+%H:%M:%S") /dev mode"
 

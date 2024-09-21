@@ -1,17 +1,17 @@
 const OpenAI = require("openai");
-const openai = new OpenAI();
 const Groq = require("groq-sdk");
-const groq = new Groq();
 const axios = require("axios");
 const fs = require("fs");
 
+const openai = new OpenAI();
+const groq = new Groq();
+
 const imagePrompts = {
-  'wirefram_single_Page': "A clean, minimalist digital blueprint of a website layout, showcasing essential elements such as navigation bar, hero section, content sections, and footer, emphasizing usability and user experience.",
-  'wirefram_single_bootstrap': "A clean, minimalist digital blueprint of a website layout, showcasing essential elements such as navigation bar, hero section, content sections, and footer, emphasizing usability and user experience.",
-  'wirefram': "A clean, minimalist digital blueprint of a website layout, showcasing essential elements such as navigation bar, hero section, content sections, and footer, emphasizing usability and user experience.",
-  'website-prototype': "An interactive and dynamic simulation of a website's user interface, demonstrating functionality, transitions, and animations, emphasizing the overall user experience and interactivity."
+  'constellation_analysis': "A detailed map of zodiac constellations, with stars and cosmic elements, focusing on astrology and the analysis of constellations.",
+  // Ajoute d'autres prompts selon les besoins
 };
 
+// Fonction pour générer une image basée sur le sujet
 async function generateImage(subject) {
   try {
     const prompt = imagePrompts[subject];
@@ -41,10 +41,11 @@ async function generateImage(subject) {
   }
 }
 
+// Fonction pour générer la documentation
 async function generateDocumentation(subject) {
   const completion = await groq.chat.completions.create({
     messages: [
-      { role: "assistant", content: `Generating a How-To guide for ${subject}...` },
+      { role: "assistant", content: `Generating a How-To guide for analyzing the constellation ${subject}...` },
     ],
     model: "gemma2-9b-it",
     temperature: 0.5,
@@ -59,10 +60,11 @@ async function generateDocumentation(subject) {
   return mdContent;
 }
 
+// Fonction pour générer le fichier HTML avec l'image et la documentation
 async function generateHTML(subject) {
   const imageFileName = await generateImage(subject);
   const documentation = await generateDocumentation(subject);
-  
+
   if (!imageFileName || !documentation) {
     console.error("Failed to generate HTML due to missing image or documentation.");
     return;
@@ -109,8 +111,9 @@ async function generateHTML(subject) {
   console.log(`HTML file for ${subject} saved as ${htmlFileName}`);
 }
 
+// Fonction principale
 async function main() {
-  const subject = process.argv[2] || 'AI';
+  const subject = process.argv[2] || 'constellation_analysis';
   await generateHTML(subject);
 }
 

@@ -7,67 +7,67 @@ COMMANDE9_MSG="✨ Mise à jour du répertoire sur GitHub✨"
 COMMANDE10_MSG="✨ Exit session✨"
 
 # Messages pour les constellations
-ARIES_MSG="✨ Génération how_To pour la constellation Aries ✨"
-TAURUS_MSG="✨ Génération du how_To pour la constellation Taurus ✨"
-GEMINI_MSG="✨ Génération du how_To pour la constellation Gemini ✨"
-CANCER_MSG="✨ Génération du how_To pour la constellation Cancer ✨"
-LEO_MSG="✨ Génération de how_To pour la constellation Leo ✨"
-VIRGO_MSG="✨ Génération de how_To pour la constellation Virgo ✨"
-LIBRA_MSG="✨ Génération de how_To pour la constellation Libra ✨"
-SCORPIO_MSG="✨ Génération de how_To pour la constellation Scorpio ✨"
-SAGITTARIUS_MSG="✨ Génération de how_To pour la constellation Sagittarius ✨"
-CAPRICORN_MSG="✨ Génération de how_To pour la constellation Capricorn ✨"
-AQUARIUS_MSG="✨ Génération de how_To pour la constellation Aquarius ✨"
-PISCES_MSG="✨ Génération de how_To pour la constellation Pisces ✨"
+ARIES_MSG="✨ Génération de l'image et guide pour la constellation Aries ✨"
+TAURUS_MSG="✨ Génération de l'image et guide pour la constellation Taurus ✨"
+GEMINI_MSG="✨ Génération de l'image et guide pour la constellation Gemini ✨"
+CANCER_MSG="✨ Génération de l'image et guide pour la constellation Cancer ✨"
+LEO_MSG="✨ Génération de l'image et guide pour la constellation Leo ✨"
+VIRGO_MSG="✨ Génération de l'image et guide pour la constellation Virgo ✨"
+LIBRA_MSG="✨ Génération de l'image et guide pour la constellation Libra ✨"
+SCORPIO_MSG="✨ Génération de l'image et guide pour la constellation Scorpio ✨"
+SAGITTARIUS_MSG="✨ Génération de l'image et guide pour la constellation Sagittarius ✨"
+CAPRICORN_MSG="✨ Génération de l'image et guide pour la constellation Capricorn ✨"
+AQUARIUS_MSG="✨ Génération de l'image et guide pour la constellation Aquarius ✨"
+PISCES_MSG="✨ Génération de l'image et guide pour la constellation Pisces ✨"
 
 # Commandes de génération
 generate_aries:
 	@echo "${ARIES_MSG}"
-	@node script.js Aries
+	@node script.js aries
 
 generate_taurus:
 	@echo "${TAURUS_MSG}"
-	@node script.js Taurus
+	@node script.js taurus
 
 generate_gemini:
 	@echo "${GEMINI_MSG}"
-	@node script.js Gemini
+	@node script.js gemini
 
 generate_cancer:
 	@echo "${CANCER_MSG}"
-	@node script.js Cancer
+	@node script.js cancer
 
 generate_leo:
 	@echo "${LEO_MSG}"
-	@node script.js Leo
+	@node script.js leo
 
 generate_virgo:
 	@echo "${VIRGO_MSG}"
-	@node script.js Virgo
+	@node script.js virgo
 
 generate_libra:
 	@echo "${LIBRA_MSG}"
-	@node script.js Libra
+	@node script.js libra
 
 generate_scorpio:
 	@echo "${SCORPIO_MSG}"
-	@node script.js Scorpio
+	@node script.js scorpio
 
 generate_sagittarius:
 	@echo "${SAGITTARIUS_MSG}"
-	@node script.js Sagittarius
+	@node script.js sagittarius
 
 generate_capricorn:
 	@echo "${CAPRICORN_MSG}"
-	@node script.js Capricorn
+	@node script.js capricorn
 
 generate_aquarius:
 	@echo "${AQUARIUS_MSG}"
-	@node script.js Aquarius
+	@node script.js aquarius
 
 generate_pisces:
 	@echo "${PISCES_MSG}"
-	@node script.js Pisces
+	@node script.js pisces
 
 
 exit_session:
